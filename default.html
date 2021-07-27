@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Stereo Pictures Generation Tool</title>
+	<link rel="stylesheet" href="css/stereo.css">
+</head>
+<body>
+	<header>
+		<h1>Stereo Pictures generation Tool</h1>
+	</header>
+	
+	<section id="left-and-right">
+		<div id="left">
+			<input type="file" id="left-file" name="files[]">
+			<br>
+			<canvas id="left-canvas"></canvas>
+		</div>
+		<div id="right">
+			<input type="file" id="right-file" name="files[]">
+			<br>
+			<canvas id="right-canvas"></canvas>
+		</div>
+	</section>
+	<section id="left-plus-right">
+		<canvas id="red-canvas"></canvas>
+		<canvas id="cyan-canvas"></canvas>
+		<canvas id="right-result-canvas"></canvas>
+		<canvas id="left-result-canvas"></canvas>
+	</section>
+	
+	<footer>
+	</footer>
+
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/stereo.js"></script>
+</body>
+</html>

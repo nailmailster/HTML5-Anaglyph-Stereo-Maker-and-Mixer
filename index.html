@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name="keywords" content="anaglyph, stereo, 3d, cyan-red, cyan, red, mixer, online">
+	<meta name="description" content="Online Anaglyph Stereo Pictures Mixer">
+	<title>Online Anaglyph Stereo Pictures Mixer</title>
+	<link href='http://fonts.googleapis.com/css?family=Orbitron:400,500,700,900' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-28183491-3']);
+		_gaq.push(['_trackPageview']);
+	
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+<body style="background: #F7F7F7">
+	<div id="fb-root">
+		<!--	Facebook Like Button	JavaScript SDK	start	-->
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<!--	Facebook Like Button	JavaScript SDK	end	-->
+	</div>
+	<div>
+		<!--	Google+ Like Button	script	start	-->
+		<script type="text/javascript">
+			(function() {
+				var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+				po.src = 'https://apis.google.com/js/plusone.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			})();
+		</script>
+		<!--	Google+ Like Button	script	end	-->
+	</div>
+	<header>
+		<h2 style="font-family: 'Orbitron', Calibri, sans-serif; text-align: center; margin-top: 0px; margin-bottom: 5px; min-width: 950px; text-shadow: 0px 0px 5px; color: navy">online anaglyph stereo pictures mixer</h2>
+	</header>
+	<section id="original" style="text-align: center; min-width: 950px">
+		<article style="display: inline-block; text-align: left; float: left">
+			<!--	Facebook Like Button	start	-->
+			<div class="fb-like" data-href="http://www.stereomixer.hostzi.com" data-send="true" data-layout="box_count" data-width="250" data-show-faces="false" data-font="arial" data-action="recommend"></div>
+			<!--	Facebook Like Button	end	-->
+			<br><br>
+			<!--	Google+ Like Button	start	-->
+			<div class="g-plusone" data-width="250" data-href="http://www.stereomixer.hostzi.com"></div>
+			
+			<script type="text/javascript">
+			  (function() {
+			    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			    po.src = 'https://apis.google.com/js/plusone.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			  })();
+			</script>
+<!--			<div class="g-plusone" data-width="250" data-href="http://www.stereomixer.hostzi.com"></div> -->
+			<!--	Google+ Like Button	end	-->
+		</article>
+		<article style="display: inline-block; text-align: right; margin-left: -100px">
+			<input type="file" id="file1" name="files[]" accept="image/*">
+			<br>
+			<div id="layers1" style="position: relative; text-align: right; cursor: crosshair">
+				<canvas id="canvas1" style="width: 320px; height:240px"></canvas>
+				<canvas id="zoomCanvas" style="width: 100px; height: 100px; position: absolute; left: 0px; top: 0px; display: none"></canvas>
+				<canvas id="cpCanvas1" style="width: 320px; height:240px; position: absolute; left: 0px; top: 0px"></canvas>
+<!--				<canvas id="layer1" style="width: 320px; height:240px; border: 1px silver solid; position: absolute; left: 0px; top: 0px"></canvas>	-->
+			</div>
+			<p style="margin: 0; text-align: right"><em>Set the control points with the</em> <b>left mouse button</b></p>
+			<p style="margin: 0; text-align: right"><b>Z X</b> - <em>scale</em>, <b>&lt; &gt;</b> - <em>rotate</em>,</p>
+		</article>
+		<article style="display: inline-block; text-align: left">
+			<input type="file" id="file2" name="files[]" accept="image/*">
+			<br>
+			<div id="layers2" style="position: relative; text-align: left; cursor: crosshair">
+				<canvas id="canvas2" style="width: 320px; height:240px"></canvas>
+				<canvas id="zoomCanvas2" style="width: 100px; height: 100px; position: absolute; left: 0px; top: 0px; display: none"></canvas>
+				<canvas id="cpCanvas2" style="width: 320px; height:240px; position: absolute; left: 0px; top: 0px"></canvas>
+<!--				<canvas id="layer2" style="width: 320px; height:240px; border: 1px silver solid; position: absolute; left: 0px; top: 0px"></canvas>	-->
+			</div>
+			<p style="margin: 0; text-align: left"><em>(hold</em> <b>Ctrl key</b> or <b>C</b> <em>for larger view).</em></p>
+			<p style="margin: 0; text-align: left"><b>A S W D</b> - <em>shift</em></p>
+		</article>
+	</section>
+	<section id="cyanred" style="display: none">
+		<canvas id="canvasColor1" style="width: 320px; height:240px; border: 1px silver solid"></canvas>
+		<canvas id="canvasColor2" style="width: 320px; height:240px; border: 1px silver solid"></canvas>
+	</section>
+	<section id="blend" style="text-align: center; min-width: 950px">
+		<canvas id="canvasBlend" style="width: 320px; height:240px; border: 1px silver solid"></canvas>
+		<br>
+		<button name="cmdFullSize" onclick="showFullSize()">Show/update full size picture</button>
+	</section>
+	<section id="full" style="text-align: center; font-family: 'Orbitron'">
+		<img id="fullImage" alt="combined image" style="width: 320px; height: 240px; display: none; width: 100%; margin: 0 auto; cursor: auto" longdesc="stereo">
+		<canvas id="canvasFull" style="width: 320px; height:240px; display: none"></canvas>
+		<canvas id="canvasFull1" style="display: none"></canvas>
+		<canvas id="canvasFull2" style="display: none"></canvas>
+	</section>
+	<footer>
+		<p style="text-align: center; min-width: 950px; font-weight: bold; color: navy">&copy; Copyright 2012-2013</p>
+	</footer>
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/stereomixer.js"></script>
+</body>
+</html>
